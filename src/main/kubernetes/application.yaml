@@ -1,0 +1,21 @@
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  name: kogito-dmn-project
+  labels:
+    app: kogito-dmn-project
+spec:
+  replicas: 1
+  selector:
+    matchLabels:
+      app: kogito-dmn-project
+  template:
+    metadata:
+      labels:
+        app: kogito-dmn-project
+    spec:
+      containers:
+      - name: kogito-dmn-project
+        image: jizuzquiza/kogito-dmn-elk-project:1.0
+        ports:
+        - containerPort: 8080

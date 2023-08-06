@@ -7,7 +7,7 @@ pipeline {
     stages {
         stage('Build') { 
             steps {
-                sh 'mvn -B -DskipTests clean package' 
+                sh 'mvn -Dorg.kie.dmn.runtime.typecheck=true clean package' 
             }
         }
     }

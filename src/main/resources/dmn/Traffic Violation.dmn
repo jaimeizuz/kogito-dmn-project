@@ -14,7 +14,7 @@
       </dmn:allowedValues>
     </dmn:itemComponent>
     <dmn:itemComponent id="_DDD10D6E-BD38-4C79-9E2F-8155E3A4B438" name="Speed Limit" isCollection="false">
-      <dmn:typeRef>number</dmn:typeRef>
+      <dmn:typeRef>string</dmn:typeRef>
     </dmn:itemComponent>
     <dmn:itemComponent id="_229F80E4-2892-494C-B70D-683ABF2345F6" name="Actual Speed" isCollection="false">
       <dmn:typeRef>number</dmn:typeRef>
@@ -28,9 +28,9 @@
       <dmn:typeRef>number</dmn:typeRef>
     </dmn:itemComponent>
   </dmn:itemDefinition>
-  <dmn:inputData id="_1929CBD5-40E0-442D-B909-49CEDE0101DC" name="Violation">
+  <dmn:inputData id="_1929CBD5-40E0-442D-B909-49CEDE0101DC" name="Violation2">
     <dmn:extensionElements/>
-    <dmn:variable id="_C16CF9B1-5FAB-48A0-95E0-5FCD661E0406" name="Violation" typeRef="tViolation"/>
+    <dmn:variable id="_C16CF9B1-5FAB-48A0-95E0-5FCD661E0406" name="Violation2" typeRef="tViolation"/>
   </dmn:inputData>
   <dmn:decision id="_4055D956-1C47-479C-B3F4-BAEB61F1C929" name="Fine">
     <dmn:extensionElements/>
@@ -54,7 +54,7 @@
           <dmn:text>"speed"</dmn:text>
         </dmn:inputEntry>
         <dmn:inputEntry id="_246AAB08-A945-4599-9220-7C24B6716FDD">
-          <dmn:text>[10..30)</dmn:text>
+          <dmn:text>[10..a)</dmn:text>
         </dmn:inputEntry>
         <dmn:outputEntry id="_E49345EE-51D3-47C7-B658-3607E723FF37">
           <dmn:text>500</dmn:text>
